@@ -64,7 +64,7 @@ function draw() {
     
    
   }
-  sling.attach(points[0], player.body);
+ 
 }
 
 
@@ -110,6 +110,7 @@ function handlePoints(i){
   if (points[i].x < 60) {
     points.shift();
   }
+  sling.attach(points[0], player.body);
 }
 
 function handleStars() {
